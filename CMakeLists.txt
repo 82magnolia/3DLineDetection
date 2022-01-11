@@ -21,8 +21,8 @@ ELSE(OPENMP_FOUND AND WITH_OPENMP)
 	SET (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DMAX_OPENMP_NUM_THREADS=1 -DOPENMP_NUM_THREADS=1")
 ENDIF(OPENMP_FOUND AND WITH_OPENMP)
 
-# OpenCV
-#SET(OpenCV_DIR "E:/installer/opencv/build")
+# OpenCV: Replace this with where opencv build folder is located
+SET(OpenCV_DIR "/home/jhkim/opencv/build")
 FIND_PACKAGE(OpenCV REQUIRED)
-
 ADD_SUBDIRECTORY(src)
+

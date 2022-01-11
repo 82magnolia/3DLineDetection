@@ -112,10 +112,10 @@ void writeOutLines( string filePath, std::vector<std::vector<cv::Point3d> > &lin
 }
 
 
-void main() 
+int main(int argc, char** argv) 
 {
-	string fileData = "D://Facade//data.txt";
-	string fileOut  = "D://Facade//data";
+    string fileData = argv[1];
+    string fileOut = argv[2];
 
 	// read in data
 	PointCloud<double> pointData; 

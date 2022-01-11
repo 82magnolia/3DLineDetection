@@ -3,6 +3,8 @@
 
 #include "CommonFunctions.h"
 #include "Timer.h"
+#define CV_CHAIN_APPROX_NONE cv::CHAIN_APPROX_NONE
+#define CV_RETR_LIST cv::RETR_LIST
 
 using namespace std;
 using namespace cv;
